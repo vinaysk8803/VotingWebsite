@@ -1,0 +1,23 @@
+body{
+   
+    background-color: rgb(212, 179, 243);
+}
+.header{
+    padding: 5px;
+}
+header h1{
+    font-family: cursive;
+}
+
+hr{
+    border: 1px solid black;
+}
+
+button{
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #346eec;
+    color: white;
+    border-radius: 5px;
+}
+

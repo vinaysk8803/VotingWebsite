@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: rgb(212, 179, 243);
+}
+.header{
+    padding: 5px;
+}
+header h1{
+    font-family: cursive;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+hr{
+    border: 1px solid black;
+}
+#dropbox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+}
+button{
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #2e6cf1;
+    color: white;
+    border-radius: 5px;
+}

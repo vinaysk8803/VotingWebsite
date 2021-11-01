@@ -1,0 +1,40 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(237, 43, 92);
+}
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+body{
+    margin: 0px;
+        padding: 0px;
+        background: url('../bgimages/indian\ flag.jpg');
+       
+position: relative;
+  
+}

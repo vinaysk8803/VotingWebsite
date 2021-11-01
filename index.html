@@ -5,27 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Voting System</title>
+   
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <center>
-    <div class="header">
-    <h1>Online Voting System</h1><hr>
-    </div>
-    <div class="body">
+    
+        <div class="container">
     <form action="api/login.php" method="post">
-        <h2>Login-here</h2>
-        <input type="number" name = "mobile" placeholder="Enter mobile number"><br><br>
-        <input type="text" name="password" placeholder="Enter Your Password"> <br><br>
-        <select name="role" id="">
-            <option value="1">Voter</option>
-            <option value="2">group</option>
-        </select><br><br>
         
-        <button>Login</button><br><br>
-        New user?  <a href="routers/register.html">Register here</a>
+        <p class="login-text" style="font-size: 2rem; font-weight: 800; text-align: center;">Login</p>
+        <div class="input-group">
+           
+            <input type="number" name = "mobile" placeholder="Enter mobile number">
+        </div>
+        <div class="input-group">
+          	
+            <input type="text" name="password" placeholder="Enter Your Password"> 
+        </div>
+        <div class="select-type">	
+            <select name="role" id="">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+        </div>
+        <div class="input-group">
+        <button class="btn">Login</button>
+    </div>
+    <p class="login-register-text">Don't have an account? <a href="routers/register.html">Register here</a>.</p>
     </form>
 </div>
-</center>
+
 </body>
 </html>

@@ -7,9 +7,22 @@
     <title>Voting System - Registration</title>
     <link rel="stylesheet" href="../css/index.css">
 </head>
+<style>
+    .login-container{
+        margin-top: 10px;
+    }
+</style>
 <body>
+    <div class="logo" style="margin-left: 40px;margin-top: 20px;">
+        <h2 >E-Vote</h2>
+    </div>
+    <img class = "wave" src="../bgimages/wave.png">
+    <h2 style="font-size: 2.9 rem;text-transform: uppercase;margin: 15px 0; color: #333; text-align: center;">Register here</h2>
     <div class="container">
-        <p class="login-text" style="font-size: 2rem; font-weight: 800; text-align: center;">Register here</p>
+         <div class="img">
+             <img src="../bgimages/register.svg" >
+         </div>
+    <div class="login-container">
     <form action="../api/register.php" method="post" enctype="multipart/form-data">
         <div class="input-group">
         
@@ -36,7 +49,7 @@
         </div>
         
       <div class="image">
-          Upload image:  <br><br> <input type="file" name="photo" placeholder=""><br><br>
+          Upload image:   <input type="file" name="photo" placeholder=""><br><br>
       </div> 
    
         <div class="select-type">

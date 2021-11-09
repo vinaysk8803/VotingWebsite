@@ -1,40 +1,105 @@
-#navbar {
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: rgb(237, 43, 92);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #fff;
+    
 }
-#navbar ul {
-    display: flex;
-
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../bgimages/6383.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
 }
-
-#navbar ul li {
-    list-style: none;
-    font-size: 1.2rem;
-}
-
-#navbar ul li a {
-    color: white;
-    display: block;
-    padding: 5px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
-body{
-    margin: 0px;
-        padding: 0px;
-        background: url('../bgimages/indian\ flag.jpg');
-       
-position: relative;
+.navbar{
+    
   
+   width: 85%;
+   margin: auto;
+   padding: 35px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+   text-decoration: none;
+   color: #FFF;
+   text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50);
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top:0px ;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: inherit;
+    font-size: 30PX;
+    display: inline-block;
+    padding: 15PX 15px;
+    color: rgb(165, 241, 12);
+    
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid brown;
+    background: rgb(165, 241, 12);
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+ 
+button:hover{
+    border: none;
+    background: #009688;
+    transform: translateY(-5px);
+    
+} 
+.content button a{
+    text-decoration: none;
+   color: black;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 15px;
+    
 }

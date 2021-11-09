@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Voting System</title>
-   
+
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    
-        <div class="container">
-    <form action="api/login.php" method="post">
-        
-        <p class="login-text" style="font-size: 2rem; font-weight: 800; text-align: center;">Login</p>
-        <div class="input-group">
-           
-            <input type="number" name = "mobile" placeholder="Enter mobile number">
-        </div>
-        <div class="input-group">
-          	
-            <input type="text" name="password" placeholder="Enter Your Password"> 
-        </div>
-        <div class="select-type">	
-            <select name="role" id="">
-                <option value="1">Voter</option>
-                <option value="2">Group</option>
-            </select>
-        </div>
-        <div class="input-group">
-        <button class="btn">Login</button>
+    <div class="logo" style="margin-left: 40px;margin-top: 20px;">
+        <h2 >E-Vote</h2>
     </div>
-    <p class="login-register-text">Don't have an account? <a href="routers/register.html">Register here</a>.</p>
-    </form>
-</div>
+   
+    <img class = "wave" src="bgimages/wave.png">
+    <div class="container">
+         <div class="img">
+             <img src="bgimages/login bg.svg" >
+         </div>
+
+        <div class="login-container">
+
+            <form action="api/login.php" method="post">
+                <img class = "avtar" src="bgimages/avtarlogo.svg">
+
+               <h2 style="font-size: 2.9 rem;text-transform: uppercase;margin: 15px 0; color: #333;">Login</h2>
+                <div class="input-group">
+
+                    <input type="number" name="mobile" placeholder="Enter mobile number">
+                </div>
+                <div class="input-group">
+
+                    <input type="text" name="password" placeholder="Enter Your Password">
+                </div>
+                <div class="select-type">
+                    <select name="role" id="">
+                        <option value="1">Voter</option>
+                        <option value="2">Group</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <button class="btn">Login</button>
+                </div>
+                <p class="login-register-text">Don't have an account? <a href="routers/register.html">Register here</a>.
+                </p>
+            </form>
+        </div>
+    </div>
 
 </body>
+
 </html>

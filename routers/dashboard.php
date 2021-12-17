@@ -91,7 +91,12 @@ else{
     border-radius: 5px;
 }
 
-
+#votebtn:hover{
+    cursor: pointer;
+    background-color: green;
+    font-size: 16px;
+    width: 100px;
+}
 
 button{
     cursor: pointer;

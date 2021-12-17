@@ -114,3 +114,40 @@
     text-decoration: none;
     color: #6c5ce7;
 }
+
+.homebtn{
+    float: right;
+    margin-top: 0;
+    margin-right: 25px;
+   
+}
+.homebtn ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.homebtn ul li a{
+    text-decoration: none;
+   color: black;
+   text-transform: uppercase;
+}
+.homebtn ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.homebtn ul li:hover::after{
+    width: 100%;
+}
+.homebtn a{
+    overflow: hidden;
+}
+.heading{
+    display: inline-block;
+}
